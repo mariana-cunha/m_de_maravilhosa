@@ -1,0 +1,285 @@
+*{
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+body{
+    margin: 0;    
+}
+
+img {
+    width: 100%;
+}
+
+/* NAV */
+nav{
+    width: 100%;
+    background-color: #63458a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.logo-nav{
+    width: 100px;  
+    height: 30px;  
+}
+
+.lista{
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.menu-hamburguer{
+    width: 20px;
+    display: block;
+}
+
+.introducao{
+    padding: 30px;
+}
+
+.introducao h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 26px;
+}
+
+
+/* HEADER */
+header {
+    background: url(../img/bg-banner-claro.png);
+    background-size: cover;
+}
+
+.introducao{
+    text-align: center;
+    color: white;
+
+}
+
+/* DESCRIÇÃO */
+#descricao{
+    padding: 25px;
+    background-color: #7e5a9b;
+    text-align: center;
+    color: white;
+}
+
+.mocinha{
+    width: 70%;
+}
+
+/* MARAVILHOSAS */
+.maravilhosas{
+    color: #63458a;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cards-maravilhosas{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 82%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.maravilhosas-descricao{
+    max-width: 150px;
+}
+
+.maravilhosas-descricao-desktop{
+    display: none;
+}
+
+/* EQUIPE */
+.equipe{
+    background-color: #63458a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards-equipe{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 74%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.equipe-descricao{
+    max-width: 85px;
+}
+
+.equipe-descricao-mobile{
+    max-width: 85px;
+}
+
+.equipe-descricao-desktop{
+    display: none;
+}
+
+.ver{
+    text-decoration: none;
+    color: white;
+    background: #b288c0;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(82, 79, 79);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer-esquerda ul{
+    list-style: none;
+} 
+
+.footer-esquerda a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;   
+}
+
+.footer-meio img{
+    width: 160px;  
+    height: 50px;    
+}
+
+.footer-meio p{
+    font-style: italic;
+}
+
+.footer-direita a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-direita > img{
+    max-width: 20px;
+}
+
+.rodape{
+    background-color: rgb(61, 60, 60);
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+
+
+
+
+@media (min-width: 1020px){
+
+    .lista{
+        display: flex;
+        list-style: none;
+    }
+
+    .lista li{
+        list-style: none;
+    }
+
+    .lista a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding-left: 140px;
+    }
+    
+    .menu-hamburguer{
+        display: none;
+    }
+    
+    .introducao{
+        padding: 107px;
+        text-align: left;
+        width: 50%;
+    }
+
+
+    /* DESCRIÇÃO */
+    #descricao div > img{
+        width: 30%;
+    }
+
+    #descricao p{
+        padding: 20px 100px;
+    }
+
+    /* MARAVILHOSAS */
+    .cards-maravilhosas{
+        width: 48%;
+    }
+
+    .maravilhosas-descricao{
+        max-width: 150px;
+    }
+
+    .maravilhosas-descricao-desktop{
+        display: initial;
+        max-width: 150px;
+    }
+
+    /* EQUIPE */
+    .cards-equipe{
+        width: 80%;
+    }
+
+    .equipe-descricao{
+        max-width: 150px;
+    }
+
+    .equipe-descricao-desktop{
+        display: initial;
+        max-width: 150px;
+    }
+
+    .equipe-descricao-mobile{
+        display: none;
+    }
+    
+    /* FOOTER */
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+}    
+
+
+
+
