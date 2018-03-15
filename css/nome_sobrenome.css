@@ -1,0 +1,309 @@
+*{
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+h1, h2, h3, h4{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+body{
+    margin: 0;    
+}
+
+img {
+    width: 100%;
+}
+
+/* NAV */
+nav{
+    width: 100%;
+    background-color: #63458a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-nav{
+    width: 100px;  
+    height: 30px;  
+}
+
+.lista{
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.menu-hamburguer{
+    width: 20px;
+    display: block;
+}
+
+/* HEADER */
+header {
+    background: url(../img/bg-banner-escuro.png);
+    background-size: cover;
+    position: relative;
+    padding-top: 145px;
+}
+
+header h2{
+    position: absolute;
+    bottom: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 55px;
+    color: white;
+}
+
+.tamanho{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mocinha{
+    width: 70%;
+    /* margin: 0 auto; */
+}
+
+h3{
+    color: #63458a;
+    padding: 0 30px;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    padding: 0 30px;
+}
+
+p{
+    padding: 0 30px;
+    color: #63458a;
+}
+
+.fala-mocinha{
+    color: #63458a;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20%; 
+}
+
+.fala-img{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.descricao-img{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.autora{
+    background-color: #e4b7e5;
+    display: flex;
+    align-items: center;
+    margin: 0 0 60px;
+    justify-content: center;
+}
+
+.autora div p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.lado-a-lado{
+    display: flex;
+    align-items: center;
+}
+
+.perfil-recomendado{
+    background-color: #e4b7e5;
+    padding: 0 0 20px;
+    margin: 10px 0 40px;
+    width: 30%;
+
+
+}
+
+.perfil-recomendado p{
+    color: white;
+}
+
+.perfil-recomendado > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #63458a;
+    padding: 0 30px;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(82, 79, 79);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+.footer-esquerda ul{
+    list-style: none;
+} 
+
+.footer-esquerda a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;   
+}
+
+.footer-meio img{
+    width: 160px;  
+    height: 50px;    
+}
+
+.footer-meio p{
+    font-style: italic;
+}
+
+.footer-direita a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-direita > img{
+    max-width: 20px;
+}
+
+.rodape{
+    background-color: rgb(61, 60, 60);
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.rodape p{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1020px){
+    .lista{
+        display: flex;
+        list-style: none;
+    }
+
+    .lista li{
+        list-style: none;
+    }
+
+    .lista a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding-left: 140px;
+    }
+    
+    .menu-hamburguer{
+        display: none;
+    }
+    
+    /* DESCRIÇÃO */
+    .descricao{
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+
+    .descricao img{
+        width: 70%;
+        padding: 0 15%;
+    }
+
+    .descricao p{
+        color: #63458a;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .fato-descricao{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fato-descricao p{
+        width: 20%;
+    }
+
+    /* HEADER */
+    header {
+        padding-top: 400px;
+    }
+
+    header h2{
+        margin-left: 270px;
+        font-size: 50px;
+    }
+
+    .descricao-mocinha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descricao-img{
+        width: 92%;
+        margin: 0 auto;
+        width: 20%;
+
+    }
+
+    .fala-img{
+        width: 25%;
+    }
+
+    .descricao-mocinha > p{
+        width: 30%;
+    }
+    
+    .mocinha{
+        width: 20%;
+    }
+
+    .perfil-recomendado{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer{
+        display: flex;
+        justify-content: space-around;
+        }
+}
